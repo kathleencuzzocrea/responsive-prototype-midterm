@@ -3,17 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm</title>
+    <title>Orbitz - Home</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <!-- basic sans from adobe fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/orh2tma.css">
+    <!-- logo on page tab -->
+    <link rel="icon" type="image/x-icon" href="images/logoo.svg">
 </head>
 <body>
-    <header>
-        <div id="logo"></div>
-        <nav id="main-nav"></nav>
+    <header class="grid-con center-grid-con">
+        <div id="logo" class="box col-span-2 m-col-span-3">
+            <img src="images/logoo.svg">
+        </div>
+        <nav id="main-nav" class="m-col-span-9">
+            <ul>
+                <li href="/index.html">Home</li>
+                <li href="#">Products</li>
+                <li href="#">About</li>
+                <li href="#">Where To Buy</li>
+                <li href="/index.html">Contact</li>
+            </ul>
+            <div id="shopping-cart" class="box">shopping cart</div>
+            <div id="profile" class="box">profile icon</div>
+        </nav>
     </header>
 
-    <main></main>
+    <main>
+        <section id="hero" class="grid-con center-grid-con">
+            <div id="home-hero-img" class="box col-span-full">
+                <p>hero image</p>
+            </div>
+        </section>
+        
+        <section id="welcome" class="grid-con center-grid-con">
+            <div class="box col-span-1 m-col-start-2 m-col-end-5">
+                <p>star</p>
+            </div>
+            <div class="col-span-3 m-col-start-5 m-col-end-12">
+                <h2>Welcome to Orbitz</h2>
+                <p>The soda that launches your taste buds into another galaxy. Packed with explosive flavor and cosmic-level fizz, Orbitz isn’t just a drink. It’s a full-blown flavor mission. Buckle up. Pop the cap. Prepare for liftoff.</p>
+            </div>
+        </section>
+
+        <section id="interactive-bottle" class="grid-con center-grid-con">
+            <img src="images/bottleflop.png" class="col-start-2 col-end-4 m-col-start-5 m-col-end-9">
+        </section>
+
+        <section id="brand-text" class="grid-con center-grid-con">
+            <div class="box col-span-1 m-col-start-2 m-col-end-5">
+                <p>star</p>
+            </div>
+            <div class="col-span-3 m-col-start-5 m-col-end-12">
+                <p>At Orbitz, we believe soda should be fun. That’s why we pack every can with eye-popping fizz, vibrant flavor, and a design that’s straight from the stars. It’s not just about quenching your thirst — it’s about launching your day into something extraordinary.</p>
+            </div>
+        </section>
+
+        <section id="products" class="grid-con center-grid-con">
+            <h2 class="col-span-full">Products</h2>
+            <div class="box col-span-2 m-col-span-3"></div>
+            <div class="box col-span-2 m-col-span-3"></div>
+            <div class="box col-span-2 m-col-span-3"></div>
+            <div class="box col-span-2 m-col-span-3"></div>
+        </section>
+
+        <section id="flavour-text" class="grid-con center-grid-con">
+            <div class="box col-span-1 m-col-start-2 m-col-end-5">
+                <p>star</p>
+            </div>
+            <div class="col-span-3 m-col-start-5 m-col-end-12">
+                <p>Whether you’re powering through a late-night gaming session, chilling with friends, or just escaping the ordinary, Orbitz is your go-to rocket fuel. Every sip delivers a sparkling burst of bold flavor that keeps the good vibes in orbit.</p>
+            </div>
+        </section>
+    </main>
 
     <footer></footer>
 
