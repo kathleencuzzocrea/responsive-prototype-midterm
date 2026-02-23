@@ -123,6 +123,40 @@ footer ul li a {
     color: white;
 }
 
+#products-page div{
+    margin: 20px;
+    padding: 40px 0 40px 0;
+    border-radius: 20px;
+}
+
+#products-page div p {
+    margin: 20px 0 40px 0;
+}
+
+.cart-button{
+    background-color: #32327b;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#lemon{
+    background-color: #eeea73;
+}
+
+#orange{
+    background-color: #f3ae7d;
+}
+
+#strawberry{
+    background-color: #f089ab;
+}
+
+#blueberry{
+    background-color: #7ba3ff;
+}
+
 /* tablet and above media query */
 
 @media screen and (min-width: 768px) {
