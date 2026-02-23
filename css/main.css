@@ -5,10 +5,146 @@
     font-style: normal;
 }
 
-p {
+body {
     font-family: 'basic sans', sans-serif;
 }
 
 h2, h3, h4, h5, h6 {
     font-family: 'bagel fat', sans-serif;
+}
+
+.center-box{
+justify-self: center;
+}
+
+#hidden-box{
+   display:none;
+}
+
+#burger{
+    width: 30px;
+    margin-left: auto;
+}
+
+nav{
+    margin-top: 20px;
+}
+
+header{
+ align-items: center;   
+}
+
+#burger-menu{
+    display:none;
+}
+
+#burger-menu{
+    padding: 0;
+    list-style-type: none;
+}
+
+#burger-menu li a {
+    text-decoration: none;
+    color: #32327b;
+   }
+
+#sign-in{
+    display: none;
+}
+
+#welcome{
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    background-color: #f1e902;
+}
+
+#brand-text{
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    background-color: #f47a20;
+}
+
+#flavour-text{
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    background-color: #ed1a60;
+}
+
+#logo{
+    margin-top: 20px;
+}
+
+#products{
+    padding: 20px 0 20px 0;
+}
+
+#products-button{
+    background-color: #32327b;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#products h2{
+    padding-bottom: 20px;
+}
+
+#products-button a{
+    text-decoration: none;
+    color: white;
+}
+
+input{
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 5px solid #ed1a60;
+    font-family: 'basic sans', sans-serif;
+    display: block;
+}
+
+#contact{
+    margin-bottom: 20px;
+}
+
+footer{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #32327b;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* tablet and above media query */
+
+@media screen and (min-width: 768px) {
+   #hidden-box{
+      display: block;
+   }
+   
+   #burger{
+        display: none;
+   }
+
+   #burger-menu{
+    display:flex;
+    justify-content: space-evenly;
+   }
+
+   nav{
+    order:2; 
+   }
+
+   #sign-in{
+    display: block;
+    width: 40px;
+   }
 }
