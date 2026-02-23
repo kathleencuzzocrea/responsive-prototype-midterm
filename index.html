@@ -12,33 +12,41 @@
     <link rel="icon" type="image/x-icon" href="images/logoo.svg">
 </head>
 <body>
+    <h1 class="visually-hidden">Orbitz Homepage</h1>
     <header class="grid-con center-grid-con">
-        <div id="logo" class="box col-span-2 m-col-span-3">
-            <img src="images/logoo.svg">
-        </div>
-        <nav id="main-nav" class="m-col-span-9">
-            <ul>
-                <li href="/index.html">Home</li>
-                <li href="#">Products</li>
-                <li href="#">About</li>
-                <li href="#">Where To Buy</li>
-                <li href="/index.html">Contact</li>
+        
+        <nav class="col-span-full m-col-start-3 m-col-end-12">
+            <div id="burger">
+                <img src="images/burger.svg">
+            </div>
+            <ul id="burger-menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Where to Buy</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-            <div id="shopping-cart" class="box">shopping cart</div>
-            <div id="profile" class="box">profile icon</div>
         </nav>
+
+        <div class="col-start-1 col-end-2 m-col-start-1 m-col-end-3" id="logo">
+            <img src="images/logoo.svg" alt="Orbitz logo">
+        </div>
+
+        <div id="sign-in" class="m-col-start-12 m-col-end-13 center-box">
+                <img src="images/sign-in.svg">
+            </div>
     </header>
 
     <main>
         <section id="hero" class="grid-con center-grid-con">
-            <div id="home-hero-img" class="box col-span-full">
-                <p>hero image</p>
+            <div id="home-hero-img" class="col-span-full">
+                <img src="images/orbitz-poster-3d.png">
             </div>
         </section>
         
         <section id="welcome" class="grid-con center-grid-con">
             <div class="box col-span-1 m-col-start-2 m-col-end-5">
-                <p>star</p>
+                <p>img</p>
             </div>
             <div class="col-span-3 m-col-start-5 m-col-end-12">
                 <h2>Welcome to Orbitz</h2>
@@ -52,32 +60,77 @@
 
         <section id="brand-text" class="grid-con center-grid-con">
             <div class="box col-span-1 m-col-start-2 m-col-end-5">
-                <p>star</p>
+                <p>img</p>
             </div>
             <div class="col-span-3 m-col-start-5 m-col-end-12">
-                <p>At Orbitz, we believe soda should be fun. That’s why we pack every can with eye-popping fizz, vibrant flavor, and a design that’s straight from the stars. It’s not just about quenching your thirst — it’s about launching your day into something extraordinary.</p>
+                <p>At Orbitz, we believe soda should be fun. That’s why we pack every bottle with eye-popping fizz, vibrant flavor, and a design that’s straight from the stars. It’s not just about quenching your thirst — it’s about launching your day into something extraordinary.</p>
             </div>
         </section>
 
         <section id="products" class="grid-con center-grid-con">
-            <h2 class="col-span-full">Products</h2>
-            <div class="box col-span-2 m-col-span-3"></div>
-            <div class="box col-span-2 m-col-span-3"></div>
-            <div class="box col-span-2 m-col-span-3"></div>
-            <div class="box col-span-2 m-col-span-3"></div>
+            <h2 class="col-span-full center-box">Products</h2>
+            <div class="box col-span-2 m-col-span-3">
+                <img src="images/lemon-label.png">
+            </div>
+            <div class="box col-span-2 m-col-span-3">
+                <img src="images/orange-label.png">
+            </div>
+            <div class="box col-span-2 m-col-span-3">
+                <img src="images/strawberry-label.png">
+            </div>
+            <div class="box col-span-2 m-col-span-3">
+                <img src="images/blue-label.png">
+            </div>
+
+            <div id="products-button" class="col-span-full center-box">
+                <p><a href="#">Shop Now</a></p>
+            </div>
         </section>
 
         <section id="flavour-text" class="grid-con center-grid-con">
             <div class="box col-span-1 m-col-start-2 m-col-end-5">
-                <p>star</p>
+                <p>img</p>
             </div>
             <div class="col-span-3 m-col-start-5 m-col-end-12">
                 <p>Whether you’re powering through a late-night gaming session, chilling with friends, or just escaping the ordinary, Orbitz is your go-to rocket fuel. Every sip delivers a sparkling burst of bold flavor that keeps the good vibes in orbit.</p>
             </div>
         </section>
+
+        <section id="contact" class="grid-con center-grid-con">
+            <h2 class="col-span-full center-box">Join our Crew</h2>
+            <div class="box m-col-start-2 m-col-end-7" id="hidden-box">
+                <p>image</p>
+            </div>
+            <!-- form from couples resort build -->
+            <form action="email.php" method="POST" enctype="text/plain" class="col-span-full m-col-start-7 m-col-end-12">
+                <input name="fullName" type="text" placeholder="First & Last Name">
+                <input name="phoneNum" type="text" required placeholder="Phone Number">
+                <input name="phoneNum" type="text" required placeholder="Email Address">
+                <input name="submit" type="submit" value="Send">
+            </form>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer class="grid-con center-grid-con">
+        <img src="images/logoo.svg" class="col-start-1 col-end-2 m-col-span-2">
+
+            <ul class="col-start-2 col-end-4 m-col-span-8">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Where to Buy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        <!-- from icons8.com -->
+         <div class="col-start-4 col-end-5 m-col-span-2">
+            <img src="images/icons8-facebook.svg">
+            <img src="images/icons8-instagram.svg">
+            <img src="images/icons8-tiktok.svg">
+        </div>
+
+        <h4 class="col-span-full center-box">© Orbitz 2026</h4>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
